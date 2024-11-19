@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff; /* Blue background */
+  color: white;
+}
+
+header {
+  background-color: #004080; /* Darker blue header */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta button {
+  background-color: #004080; /* Darker blue button */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.cta button:hover {
+  background-color: #002040; /* Even darker blue on hover */
+  transform: translateY(-2px); /* Slightly move the button up on hover */
+}
+
+.features {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.feature {
+  text-align: center;
+  padding: 5px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonials {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.contact {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.review-box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .review-box textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc7c7;
+    border-radius: 3px;
+    resize: vertical;
+  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
