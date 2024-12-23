@@ -3,86 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Disability Detection Hub</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Start Diagnosis</a></li>
-            <li><a href="#">Learn More</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1 style="text-align: center; font-weight: bold;">Disability Detection Hub</h1>
-    </header>
-    <main>
-        <div class="container">
-            <h2>What We Offer</h2>
-            <a href="https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=93bb9823-685b-443a-ada7-270f833e6563"><button class="start-button">Start Assessment</button></a>
-            <h3>Types of Learning Disabilities</h3>
-            <ul>
-                <li><strong>Dyslexia:</strong> Challenges with reading fluency, decoding, spelling.</li>
-                <li><strong>Dyscalculia:</strong> Struggles with math, understanding numbers.</li>
-                <li><strong>Dysgraphia:</strong> Issues with handwriting and written expression.</li>
-                <li><strong>ADHD:</strong> Difficulty focusing, staying organized, and completing tasks.</li>
-            </ul>
-
-            <h3>Diagnosis Tools</h3>
-            <p>Our diagnostic assessments guide you through a series of questions and tests designed to pinpoint specific disabilities. These include:</p>
-            <ul>
-                <li>Detailed questionnaires.</li>
-                <li>Vision, hearing, and neurological screenings.</li>
-                <li>Reading and language assessments.</li>
-            </ul>
-
-            <h3>Personalized Solutions</h3>
-            <p>We provide tailored strategies and tools for each learning disability:</p>
-            <ul>
-                <li><strong>Dyslexia:</strong> Structured literacy programs, text-to-speech software.</li>
-                <li><strong>Dysgraphia:</strong> Occupational therapy, handwriting exercises.</li>
-                <li><strong>ADHD:</strong> Digital planners, focus-enhancing tools, structured routines.</li>
-            </ul>
-
-            <h2>How It Works</h2>
-            <ol>
-                <li><strong>Take the Assessment:</strong> Answer a series of questions to identify potential disabilities.</li>
-                <li><strong>Get Personalized Results:</strong> Receive detailed insights into the disability and recommended solutions.</li>
-                <li><strong>Access Tools:</strong> Explore assistive technologies, strategies, and therapies tailored to your needs.</li>
-            </ol>
-
-            <h2>Our Research</h2>
-            <p>We base our platform on trusted research and references, including:</p>
-            <ul>
-                <li><strong>ADHD:</strong> Studies from IEEE and Mayo Clinic.</li>
-                <li><strong>Dyslexia:</strong> Solutions developed by industry experts.</li>
-            </ul>
-
-            <h2>About Us</h2>
-            <p>Our platform focuses on diagnosing various learning disabilities such as Dyslexia, ADHD, Dysgraphia, and more. Our goal is to help individuals recognize their difficulties and offer personalized strategies and tools to overcome them.</p>
-        </div>
-    </main>
-    <style>
-    .start-button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        transition: background-color 0.3s ease; /* Add a transition effect */
-    }
+    <title>DisDetect - Diagnostic Assessments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     
-    .start-button:hover {
-        background-color: #3e8e41; /* Darker green on hover */
-    }
+    <style>
+        * {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .neubrutalism {
+            box-shadow: 5px 5px 0px 0px #000000;
+            border: 3px solid #000000;
+            transition: all 0.2s ease;
+        }
+        .neubrutalism:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 10px 10px 0px 0px #000000;
+        }
+        body {
+            background: 
+                linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 bg-white neubrutalism z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold gradient-text">
+                    <i class="bi bi-shield-check"></i> DisDetect
+                </div>
+                <div class="space-x-4">
+                    <a href="#login" class="bg-blue-400 px-6 py-2 neubrutalism rounded-lg hover:bg-blue-500">Login</a>
+                    <a href="#signup" class="bg-purple-400 px-6 py-2 neubrutalism rounded-lg hover:bg-purple-500">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-24">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-pink-300 via-yellow-300 to-green-300 p-8 md:p-12 neubrutalism rounded-lg">
+                <h1 class="text-4xl md:text-6xl font-bold mb-8 text-center">
+                    Diagnostic Assessments
+                </h1>
+                
+                <p class="text-xl md:text-2xl mb-8 text-center">
+                    Smart AI-powered assessments to help identify and understand various disabilities with precision and care.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 neubrutalism rounded-lg hover:bg-pink-100">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i class="bi bi-clipboard-check text-pink-500 mr-2"></i>
+                            Smart Questionnaires
+                        </h2>
+                        <p class="text-lg">AI-driven surveys that adapt to your responses for more accurate results.</p>
+                    </div>
+
+                    <div class="bg-white p-6 neubrutalism rounded-lg hover:bg-blue-100">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i class="bi bi-eye text-blue-500 mr-2"></i>
+                            Interactive Tests
+                        </h2>
+                        <p class="text-lg">Engaging assessments for vision, hearing, and cognitive functions.</p>
+                    </div>
+
+                    <div class="bg-white p-6 neubrutalism rounded-lg hover:bg-green-100">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <i class="bi bi-book text-green-500 mr-2"></i>
+                            Comprehensive Analysis
+                        </h2>
+                        <p class="text-lg">Detailed reports with personalized insights and recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="https://botpress.com" target="_blank" 
+                       class="inline-block bg-gradient-to-r from-green-400 to-blue-400 text-black text-2xl font-bold px-12 py-6 neubrutalism rounded-lg hover:from-green-500 hover:to-blue-500 animate-pulse">
+                        Start Your Assessment
+                        <i class="bi bi-arrow-right-circle-fill ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-lg">
+                        <i class="bi bi-shield-check"></i>
+                        Your data is secure and confidential
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container mx-auto px-4 pb-16">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 neubrutalism rounded-lg hover:bg-orange-100">
+                <i class="bi bi-clock-history text-4xl text-orange-500"></i>
+                <h3 class="text-xl font-bold mt-4">Quick Results</h3>
+                <p>Get your assessment results within minutes</p>
+            </div>
+            <div class="bg-white p-6 neubrutalism rounded-lg hover:bg-purple-100">
+                <i class="bi bi-chat-square-dots text-4xl text-purple-500"></i>
+                <h3 class="text-xl font-bold mt-4">24/7 Support</h3>
+                <p>Access to professional guidance whenever you need</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
