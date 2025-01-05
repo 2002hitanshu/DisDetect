@@ -1,6 +1,7 @@
 # DisDetect
 Autism spectrum disorder (ASD) is a neurodevelopmental disorder with onset in early childhood that is associated with a wide range of symptoms and ability levels. Although no cure exists for autism spectrum disorder, and there is no one-size-fits-all treatment. The only treatment is to maximize your child's ability to function by reducing autism spectrum disorder symptoms and supporting development and learning. In this project we are going to detect autism disease by analysing images to make such a model which will help two determine ASD and help people gain confidence in their recovery rate.
 
+Research Sheet:-https://docs.google.com/spreadsheets/d/1MGy0VNajXa60Hq1_BPoAeeDMcV1Ux7Ca3Z4wOhLVCOs/edit?usp=sharing
 ![image](https://github.com/user-attachments/assets/e8991d25-86d4-43e8-ba49-a61ff37a2acf)
 
 
